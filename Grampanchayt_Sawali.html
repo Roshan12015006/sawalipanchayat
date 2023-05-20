@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sawali gram</title>
+    <link rel="stylesheet" href="gram_style.css">
+</head>
+<style>
+    .container{
+        font-size: 23px;
+        background-color: blanchedalmond;
+      border: 2px solid grey;
+      padding: 14px;
+      margin: 4px;
+      text-align: center;
+    }
+</style>
+<body>
+
+    <div class="container">
+        This is Grampanchayat Sawali  
+    currunt time is <span id="time"></span> 
+    </div>
+    <nav id="navbar">
+        <div id="logo"> 
+            <img src="logo_gram.png" alt="My onlinemeals.com">
+        </div>
+
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">Contact us</a></li>
+            <li class="item"><a href="#">Panchs</a></li>
+            <li class="item"><a href="#">Services</a></li>
+            <li class="item"><a href="#">About us</a></li>
+          
+          
+        </ul>
+    </nav>
+    <section id="home"> 
+        <h1 class="h-primery"><u>Welcome To Sawali Gram panchayat</u></h1>
+           <p>Panchayati Raj strengthens the foundation of Indian democracy. </p>
+
+           <p> It provides representation to the weaker sections of the society, namely, Scheduled Tribes, Scheduled Castes, Other Backward Classes and women.</p>
+
+           <p>The Gram Panchayat maintains water sources, village wells, tanks and pumps, street lighting and drainage system </p>
+           <a href="https://www.zomato.com/ncr/golf-course-order-online" target="_blank"   class="btn">Click here to Google location</a>
+           <!-- <button class="btn"><b>Order Now</b></button> -->
+    </section>
+
+    <section class="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+             <img src="logo_gram.png" alt="">
+             <h2 class="h-secondary center">Food Ordering</h2>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eos, ratione dignissimos accusamus vero ab iusto labore illo odit voluptas fuga pariatur magnam quisquam ullam. Iure deserunt laboriosam debitis velit  nemo eos dolores amet.</p>
+            </div>
+         </div>
+    </section>
+
+    <script>
+
+         // webside me   show hone ke liye
+         setInterval(updateTime , 1000);
+
+          function updateTime(){
+          time.innerHTML = new Date();
+         }
+    </script>
+</body> 
+</html>

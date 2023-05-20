@@ -1,0 +1,134 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* css variable */
+:root{
+    --navbar-height:59px; 
+}
+
+/* NAvigation Bar  */
+#navbar{
+    display:flex;
+    align-items: center;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;  /* black color ko thoda sa light black karega*/
+}
+/* nsvigstion bar */
+#logo{
+    margin: 10xp 34px;
+}
+#logo img{
+    height:85px;
+    margin: -7px 12px;
+}
+
+/* vavigation bar : List styling */
+#navbar{
+    position: relative;
+}
+
+#navbar ul{
+    display: flex;
+}
+  
+
+#navbar ul li{
+    color: red;
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li{
+    color: white;
+   display: block;
+   padding: 3px 22px;
+   border-radius: 20px;
+    text-decoration: none ;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 35%;
+}
+
+/* Home section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 340px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url(sawali123.jpeg);
+    height: 120%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1{
+    color: rgb(35, 75, 56);
+    text-align: center;
+}
+
+#home p{
+    color: rgb(87, 11, 17);
+    text-align: center;
+    font: size 1.5rem; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* services container */
+#services {
+   margin: 34px;
+   display: flex;
+}
+#services .box img{
+    
+    height: 150px;
+}
+#services .box{
+    border: 2px solid brown;
+}
+
+
+/* utility classes */
+.h-primery{
+  font-size: 3 .8ram;
+  padding: 12px;
+}
+
+.h-secodary{
+    font-size: 2.8ram;
+    padding: 12px;
+  }
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color:white ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    margin: 18px;
+    font-size:1.2rem;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
